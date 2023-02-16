@@ -1,0 +1,17 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[]=new int[10];
+		int l;
+		
+		Scanner sc=new Scanner(System.in);
+		int i;
+		l=sc.nextInt();
+		for(i=0;i<10;i++)
+		{
+		    arr[i]=sc.nextInt();
+		}
+	}
+}
