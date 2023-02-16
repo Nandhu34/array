@@ -1,0 +1,71 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] arg)
+	{
+	    	int ch1,ch2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the limit for value 1 and 2");
+		ch1=sc.nextInt();
+		ch2=sc.nextInt();
+	    int[] arr1=new int[ch1];
+	    int[] arr2=new int[ch2];
+	    int i,j;
+	    System.out.println("enter the value for array 1");
+	    for(i=0;i<ch1;i++)
+	    {
+	        arr1[i]=sc.nextInt();
+	        
+	    }
+	    System.out.println("enter the value for array 2");
+	    for(j=0;j<ch2;j++)
+	    {
+	        arr2[j]=sc.nextInt();
+	        
+	    }
+	    int high=0;
+	    System.out.println("the entered array 1 values are  ");
+	    for(i=0;i<ch1;i++)
+	    {
+	        System.out.print(arr1[i]);
+	        System.out.print(" ");
+	    
+	    }
+	    	    System.out.println("the entered array 2 values are  ");
+	    for(i=0;i<ch2;i++)
+	    {
+	        System.out.print(arr2[i]);
+	        System.out.print(" ");
+	    }
+	    if(ch1<ch2)
+	    {
+	     high=ch2;   
+	    }
+	    else if (ch1==ch2) {
+	        high=ch1;
+	    }
+	    else{
+	        high=ch1;
+	    } int[] arr3=new int[high];
+	       System.out.println("the highest value amoung arr1 and arr2 is : "+high);
+	    
+	   try {
+	       for(i=0;i<high;i++)
+	    {
+	        arr3[i]=arr1[i]+arr2[i];
+	        
+	    }
+	    System.out.println("the resultant value is :");
+	    for(i=0;i<high;i++)
+	    {
+	        System.out.println(arr3[i]);
+	    }
+	       
+	   } catch(Exception e) {
+	       System.out.println("Please enter the ro values with same number ");
+	   }
+	 
+	
+	}
+}
